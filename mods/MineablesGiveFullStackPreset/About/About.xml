@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Name>Mineables Give Full Stack (Preset)</Name>
+    <Author>G'lek Tarssza</Author>
+    <Version>0.0.1</Version>
+    <Description>Adds a mineables preset for custom maps where mineables will produce a full stack of the appropriate ore type.
+
+This mod does not affect the default map generation settings.
+
+If you just want to change the default mineable drop rates consider looking at my other mod that does just that: https://steamcommunity.com/sharedfiles/filedetails/?id=2610333278
+
+Please submit issues either through the Steam Workshop discussions tab or on GitHub: https://github.com/glek/stationeers-mods/issues</Description>
+    <WorkshopHandle>2610333374</WorkshopHandle>
+    <Tags>
+        <Tag>Mineables</Tag>
+        <Tag>Mod</Tag>
+    </Tags>
+</ModMetadata>

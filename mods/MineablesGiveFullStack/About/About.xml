@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Name>Mineables Give Full Stack</Name>
+    <Author>G'lek Tarssza</Author>
+    <Version>0.0.1</Version>
+    <Description>All mineables produce a full stack of the appropriate ore type.
+
+This mod replaces the "Default" mineables preset for custom worlds as well as the presets for non-custom worlds.
+
+If you want to go back to normal ores you can use the "Normal" preset for custom worlds or disable the mod.
+
+If you just want to a preset for custom worlds without changing the defaults consider looking at my other mod that does just that: https://steamcommunity.com/sharedfiles/filedetails/?id=2610333374
+
+Please submit issues either through the Steam Workshop discussions tab or on GitHub: https://github.com/glek/stationeers-mods/issues</Description>
+    <WorkshopHandle>2610333278</WorkshopHandle>
+    <Tags>
+        <Tag>World Settings</Tag>
+        <Tag>Mineables</Tag>
+        <Tag>Mod</Tag>
+    </Tags>
+</ModMetadata>
