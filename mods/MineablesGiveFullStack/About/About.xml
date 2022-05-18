@@ -5,6 +5,8 @@
     <Author>G'lek Tarssza</Author>
     <Version>0.0.1</Version>
     <Description>All mineables produce a full stack of the appropriate ore type.
+        
+A mineable is a single ore "item", which I call a "nodule". This mod does not change the how many of these nodules are present per ore vein.
 
 This mod replaces the "Default" mineables preset for custom worlds as well as the presets for non-custom worlds.
 
