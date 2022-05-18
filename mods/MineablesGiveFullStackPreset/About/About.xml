@@ -7,7 +7,7 @@
     <Description>Adds a mineables preset for custom maps where mineables will produce a full stack of the appropriate ore type.
 
 A mineable is a single ore "item", which I call a "nodule". This mod does not change the how many of these nodules are present per ore vein.
-        
+
 This mod does not affect the default map generation settings.
 
 If you just want to change the default mineable drop rates consider looking at my other mod that does just that: https://steamcommunity.com/sharedfiles/filedetails/?id=2610333278
