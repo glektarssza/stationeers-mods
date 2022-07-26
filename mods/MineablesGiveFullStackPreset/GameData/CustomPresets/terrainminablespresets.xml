@@ -187,6 +187,19 @@
                     <MaxVeinAttempts>0</MaxVeinAttempts>
                     <MinVeinAttempts>0</MinVeinAttempts>
                 </MineableData>
+                <MineableData>
+                    <DisplayName>Nitrice</DisplayName>
+                    <OrePrefabName>ItemNitrice</OrePrefabName>
+                    <VisualizerPrefabName>AsteroidOreNitrice</VisualizerPrefabName>
+                    <Rarity>40</Rarity>
+                    <MiningTime>2</MiningTime>
+                    <VoxelType>Nitrice</VoxelType>
+                    <VeinSize>1</VeinSize>
+                    <MaxDropQuantity>50</MaxDropQuantity>
+                    <MinDropQuantity>50</MinDropQuantity>
+                    <MaxVeinAttempts>80</MaxVeinAttempts>
+                    <MinVeinAttempts>50</MinVeinAttempts>
+                </MineableData>
             </CombinedData>
         </TerrainMineablePreset>
     </TerrainMineablePresets>
