@@ -10,7 +10,7 @@ A collection of mods I've made for the game Stationeers.
 
 ## License ##
 
-Copyright (c) 2022 G'lek Tarssza
+Copyright (c) 2022-2024 G'lek Tarssza
 
 Licensed under the MIT license.
 
