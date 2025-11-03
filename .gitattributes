@@ -1,5 +1,8 @@
-*.png filter=lfs diff=lfs merge=lfs -text
-*.jpeg filter=lfs diff=lfs merge=lfs -text
-*.jpg filter=lfs diff=lfs merge=lfs -text
-*.bmp filter=lfs diff=lfs merge=lfs -text
-*.gif filter=lfs diff=lfs merge=lfs -text
+# All files are treated as text files with Unix-style line endings by default
+* text eol=lf
+
+# All .bat files are treated as text files with Windows-style line endings by default
+*.bat text eol=crlf
+
+# All .cmd files are treated as text files with Windows-style line endings by default
+*.cmd text eol=crlf
