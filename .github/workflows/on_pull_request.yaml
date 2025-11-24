@@ -4,13 +4,11 @@ on:
   pull_request:
     branches:
       - main
-env:
-  GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 jobs:
   lint:
     name: Lint
     permissions:
-      # -- Needed to clone the repository
+      # -- To clone repository
       contents: read
     uses: ./.github/workflows/lint.yaml
     secrets:
