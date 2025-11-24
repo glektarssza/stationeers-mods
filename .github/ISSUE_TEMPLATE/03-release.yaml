@@ -31,14 +31,12 @@ body:
         Perform the following steps (in order):
 
         * [ ] Update the changelog.
-        * [ ] Update the Forge update manifest to point to this release as the latest version.
         * [ ] Tag the release.
         * [ ] Release on GitHub.
 
         After the above is completed, perform the following steps (in any order):
 
-        * [ ] Release on CurseForge.
-        * [ ] Release on Modrinth.
+        * [ ] Release on Steam Workshop.
 
         Finally, do the following (in order):
 
