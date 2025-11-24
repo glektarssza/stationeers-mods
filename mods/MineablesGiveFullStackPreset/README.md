@@ -1,4 +1,11 @@
-# (**Deprecated**) Mineables Give Full Stack (Preset) #
+# Mineables Give Full Stack (Preset) #
+
+> [!WARNING]
+> This mod has been deprecated and is no longer supported.
+>
+> There will be no further updates and no support will be given.
+>
+> Thanks for all the support over the mod's life span!
 
 Adds a mineables preset for custom maps where mineables will produce a full
 stack of the appropriate ore type.

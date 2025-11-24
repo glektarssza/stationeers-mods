@@ -1,5 +1,11 @@
 # Changelog #
 
+## v1.0.1 ##
+
+## Changes ##
+
+* Updated mod description to better communicate mod purpose.
+
 ## v1.0.0 ##
 
 ### Bug Fixes ###
