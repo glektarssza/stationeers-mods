@@ -22,7 +22,7 @@ function get_script_dir() {
     return 0
 }
 
-if ! SCRIPT_DIR="$(get_script_dir)"; then
+if [[ -z "${SCRIPT_DIR}" ]] && ! SCRIPT_DIR="$(get_script_dir)"; then
     return 1
 fi
 if [[ -z "${_LIB_PATH}" ]]; then
@@ -33,6 +33,14 @@ if [[ -n "${_LIB_SGR}" ]]; then
     return 0
 fi
 declare _LIB_SGR="loaded"
+
+# Clean up after the script is finished.
+function _lib_sgr_cleanup() {
+    unset _LIB_SGR
+    unset sgr_reset sgr_4bit_fg sgr_4bit_bg sgr_8bit_fg sgr_8bit_bg sgr_24bit_fg
+    unset sgr_24bit_bg
+}
+trap _lib_sgr_cleanup EXIT
 
 # Output the SGR reset ANSI code.
 # === Outputs ===
