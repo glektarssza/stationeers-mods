@@ -1,0 +1,21 @@
+{
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "xml.format.enabled": true,
+    "xml.format.preserveSpace": [
+        "xsl:text",
+        "xsl:comment",
+        "xsl:processing-instruction",
+        "literallayout",
+        "programlisting",
+        "screen",
+        "synopsis",
+        "pre",
+        "xd:pre",
+        "style",
+        "script",
+        "Description" // Mod description
+    ],
+    "xml.format.maxLineWidth": 80
+}
