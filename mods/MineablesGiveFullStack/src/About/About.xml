@@ -3,14 +3,14 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <Name>Mineables Give Full Stack [Nitrice Support]</Name>
     <Author>G'lek Tarssza</Author>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Description>All mineables produce a full stack of the appropriate ore type.
 
-        A mineable is a single ore "item", which I call a "nodule". This mod does not change the how many of these nodules are present per ore vein.
+A mineable is a single ore "item", which I call a "nodule". This mod does not change the how many of these nodules are present per ore vein.
 
-        This mod affects the default map generation settings.
+This mod affects the default map generation settings.
 
-        Please submit issues either through the Steam Workshop discussions tab or on GitHub: https://github.com/glek/stationeers-mods/issues</Description>
+Please submit issues either through the Steam Workshop discussions tab or on GitHub: https://github.com/glek/stationeers-mods/issues.</Description>
     <WorkshopHandle>2610333278</WorkshopHandle>
     <Tags>
         <Tag>World Settings</Tag>

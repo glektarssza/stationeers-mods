@@ -1,5 +1,11 @@
 # Changelog #
 
+## v1.0.2 ##
+
+## Changes ##
+
+* Properly formatted mod descriptions.
+
 ## v1.0.1 ##
 
 ## Changes ##

@@ -3,12 +3,12 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <Name>(Deprecated) Mineables Give Full Stack (Preset) [Nitrice Support]</Name>
     <Author>G'lek Tarssza</Author>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Description>This mod is no longer supported.
 
-        Current versions of the game no longer provide the functionality this mod requires to work.
+Current versions of the game no longer provide the functionality this mod requires to work.
 
-        Thank you for your support over the life of this mod!</Description>
+Thank you for your support over the life of this mod!</Description>
     <WorkshopHandle>2610333374</WorkshopHandle>
     <Tags>
         <Tag>Mineables</Tag>
