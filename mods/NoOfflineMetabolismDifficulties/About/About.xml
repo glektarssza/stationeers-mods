@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Name>No Offline Metabolism Difficulties</Name>
+    <Author>G'lek Tarssza</Author>
+    <Version>1.0.0</Version>
+    <Description>Title says it all.
+
+        Adds a new difficulty setting which is equivalent to the existing difficulties but with offline metabolism disabled.
+
+        Designed to facilitate LAN- or Steam-based multiplayer games.
+
+        Please submit issues either through the Steam Workshop discussions tab or on GitHub: https://github.com/glek/stationeers-mods/issues</Description>
+    <WorkshopHandle>2610333278</WorkshopHandle>
+    <Tags>
+        <Tag>World Settings</Tag>
+        <Tag>Mineables</Tag>
+        <Tag>Mod</Tag>
+    </Tags>
+</ModMetadata>
