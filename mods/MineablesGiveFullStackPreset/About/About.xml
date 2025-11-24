@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <Name>Mineables Give Full Stack (Preset)</Name>
+    <Name>Mineables Give Full Stack (Preset) (Deprecated)</Name>
     <Author>G'lek Tarssza</Author>
     <Version>1.0.0</Version>
-    <Description>Adds a mineables preset for custom maps where mineables will produce a full stack of the appropriate ore type.
+    <Description>Note: This mod is no longer supported. Current versions of the game no longer provide the functionality this mod requires to work.
+
+        Original description: Adds a mineables preset for custom maps where mineables will produce a full stack of the appropriate ore type.
 
         A mineable is a single ore "item", which I call a "nodule". This mod does not change the how many of these nodules are present per ore vein.
 
