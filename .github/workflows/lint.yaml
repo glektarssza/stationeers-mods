@@ -3,26 +3,25 @@ name: Lint
 on:
   workflow_call:
     inputs:
-      git-ref:
+      ref:
         description: |
-          The Git reference to run the workflow on.
+          The Git reference from which to clone the project.
 
-          Must be a valid commit-ish (a branch, tag, commit, etc.).
+          This can be any valid Git commit-ish (e.g. a SHA, a ref, a tag, and so
+          on).
 
-          Defaults to the reference that triggered the workflow for push and
-          pull request events ("github.ref") and the head SHA ("github.sha") for
-          all other events.
+          Defaults to the SHA that caused the workflow to be triggered. If that
+          is unavailable the fully formed reference of the branch or tag that
+          triggered the workflow is used. If that is unavailable the repository
+          default branch is used.
         type: string
         required: false
-        default: ${{github.ref || github.sha}}
+        default: ${{github.sha || github.ref || github.event.repository.default_branch}}
     secrets:
       github-token:
         description: |
-          The token to use for authentication when making calls to the GitHub
-          APIs.
-
-          Defaults to the value in "secrets.GITHUB_TOKEN" if not provided.
-        required: false
+          The token to use when making authenticated calls to the GitHub API.
+        required: true
 env:
   GH_TOKEN: ${{secrets.github-token || secrets.GITHUB_TOKEN}}
 jobs:
@@ -30,15 +29,16 @@ jobs:
     name: Lint
     runs-on: ubuntu-latest
     permissions:
-      # -- Needed to clone the repository
+      # -- To clone repository
       contents: read
     steps:
       - id: clone-repository
         name: Clone the repository
         uses: actions/checkout@v5
         with:
+          ref: ${{inputs.ref}}
           lfs: true
-          token: ${{secrets.github-token || secrets.GITHUB_TOKEN}}
+          token: ${{env.GH_TOKEN}}
       - id: prepare-python
         name: Prepare Python
         uses: actions/setup-python@v6
@@ -55,8 +55,14 @@ jobs:
         shell: bash
         run: |
           pipx install pre-commit;
+      - id: prepare-nodejs
+        name: Prepare NodeJS
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          token: ${{env.GH_TOKEN}}
       - id: lint
         name: Lint
         shell: bash
         run: |
-          pre-commit run --all-files
+          pre-commit run --all-files && npx cspell lint .;
