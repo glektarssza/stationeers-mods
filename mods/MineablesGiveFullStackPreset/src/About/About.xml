@@ -3,18 +3,12 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <Name>(Deprecated) Mineables Give Full Stack (Preset) [Nitrice Support]</Name>
     <Author>G'lek Tarssza</Author>
-    <Version>1.0.0</Version>
-    <Description>Note: This mod is no longer supported. Current versions of the game no longer provide the functionality this mod requires to work.
+    <Version>1.0.1</Version>
+    <Description>This mod is no longer supported.
 
-        Original description: Adds a mineables preset for custom maps where mineables will produce a full stack of the appropriate ore type.
+        Current versions of the game no longer provide the functionality this mod requires to work.
 
-        A mineable is a single ore "item", which I call a "nodule". This mod does not change the how many of these nodules are present per ore vein.
-
-        This mod does not affect the default map generation settings.
-
-        If you just want to change the default mineable drop rates consider looking at my other mod that does just that: https://steamcommunity.com/sharedfiles/filedetails/?id=2610333278
-
-        Please submit issues either through the Steam Workshop discussions tab or on GitHub: https://github.com/glek/stationeers-mods/issues</Description>
+        Thank you for your support over the life of this mod!</Description>
     <WorkshopHandle>2610333374</WorkshopHandle>
     <Tags>
         <Tag>Mineables</Tag>
