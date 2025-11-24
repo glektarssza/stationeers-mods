@@ -45,11 +45,28 @@ body:
         - Other (Please state in "Additional Details")
     validations:
       required: true
+  - id: stationeers-version
+    type: input
+    attributes:
+      label: Stationeers Version
+      description: The version of Stationeers you are using.
+    validations:
+      required: true
   - id: mod-version
     type: input
     attributes:
       label: Mod Version
       description: The version of the mod you are using.
+    validations:
+      required: true
+  - id: mod-portal
+    type: dropdown
+    attributes:
+      label: Mod Portal
+      description: The mod portal you downloaded the mod from.
+      options:
+        - Steam Workshop
+        - GitHub
     validations:
       required: true
   - id: additional-details
