@@ -15,7 +15,7 @@
         "xd:pre",
         "style",
         "script",
-        "Description" // Mod description
+        "Description"
     ],
     "xml.format.maxLineWidth": 80
 }
