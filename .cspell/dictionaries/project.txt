@@ -3,6 +3,7 @@ behaviour
 blackhole
 cooldown
 ensurepath
+ghpr
 glek
 glektarssza
 haumea
