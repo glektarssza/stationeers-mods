@@ -1,0 +1,81 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "lint",
+            "detail": "Lint the project.",
+            "icon": {
+                "id": "search-fuzzy",
+                "color": "terminal.ansiYellow"
+            },
+            "group": "none",
+            "dependsOn": ["lint:cspell", "lint:pre-commit"],
+            "dependsOrder": "parallel",
+            "isBackground": false,
+            "hide": false,
+            "problemMatcher": []
+        },
+        {
+            "label": "lint:pre-commit",
+            "detail": "Lint the project using pre-commit.",
+            "icon": {
+                "id": "search-fuzzy",
+                "color": "terminal.ansiYellow"
+            },
+            "group": "none",
+            "dependsOn": [],
+            "dependsOrder": "sequence",
+            "isBackground": false,
+            "hide": false,
+            "type": "shell",
+            "command": "pre-commit",
+            "args": ["run", "--all-files"],
+            "options": {},
+            "presentation": {
+                "echo": false,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "dedicated",
+                "showReuseMessage": false,
+                "clear": false
+            },
+            "runOptions": {
+                "instanceLimit": 1,
+                "instancePolicy": "silent",
+                "reevaluateOnRerun": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "lint:cspell",
+            "detail": "Lint the project using CSpell.",
+            "icon": {
+                "id": "search-fuzzy",
+                "color": "terminal.ansiYellow"
+            },
+            "group": "none",
+            "dependsOn": [],
+            "dependsOrder": "sequence",
+            "isBackground": false,
+            "hide": false,
+            "type": "shell",
+            "command": "npx",
+            "args": ["cspell", "lint", "${workspaceFolder}"],
+            "options": {},
+            "presentation": {
+                "echo": false,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "dedicated",
+                "showReuseMessage": false,
+                "clear": false
+            },
+            "runOptions": {
+                "instanceLimit": 1,
+                "instancePolicy": "silent",
+                "reevaluateOnRerun": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}

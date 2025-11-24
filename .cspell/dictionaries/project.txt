@@ -17,6 +17,7 @@ netrwhist
 nitrice
 oxite
 pipx
+remotehub
 sessionx
 Shuttlecraft
 skybox
