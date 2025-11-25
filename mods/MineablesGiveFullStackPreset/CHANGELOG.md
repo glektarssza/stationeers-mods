@@ -1,5 +1,11 @@
 # Changelog #
 
+## v2.0.0 ##
+
+## Changes ##
+
+* Final "re-release".
+
 ## v1.0.2 ##
 
 ## Changes ##
