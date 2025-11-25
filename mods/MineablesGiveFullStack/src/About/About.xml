@@ -11,6 +11,7 @@ A mineable is a single ore "item", which I call a "nodule". This mod does not ch
 This mod affects the default map generation settings.
 
 Please submit issues either through the Steam Workshop discussions tab or on GitHub: https://github.com/glek/stationeers-mods/issues.</Description>
+    <WorkshopHandle>3611926406</WorkshopHandle>
     <Tags>
         <Tag>World Settings</Tag>
         <Tag>Mineables</Tag>
