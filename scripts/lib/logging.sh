@@ -22,7 +22,7 @@ function get_script_dir() {
     return 0
 }
 
-if ! SCRIPT_DIR="$(get_script_dir)"; then
+if [[ -z "${SCRIPT_DIR}" ]] && ! SCRIPT_DIR="$(get_script_dir)"; then
     return 1
 fi
 if [[ -z "${_LIB_PATH}" ]]; then
@@ -34,7 +34,15 @@ if [[ -n "${_LIB_LOGGING}" ]]; then
 fi
 declare _LIB_LOGGING="loaded"
 
+# Clean up after the script is finished.
+function _lib_logging_cleanup() {
+    unset _LIB_LOGGING
+    unset log_error log_warning log_info log_verbose
+}
+trap _lib_logging_cleanup EXIT
+
 source "${_LIB_PATH}/sgr.sh"
+source "${_LIB_PATH}/strings.sh"
 
 # Log an error message to the standard error stream.
 function log_error() {
@@ -59,7 +67,7 @@ function log_info() {
 
 # Log a verbose message to the standard output stream.
 function log_verbose() {
-    if [[ ! -n "${VERBOSE}" || ! "${VERBOSE,,}" =~ 1|true ]]; then
+    if [[ ! -n "${VERBOSE}" || ! "$(to_lower_case "${VERBOSE}")" =~ 1|true ]]; then
         return 0
     fi
     sgr_8bit_fg "171" && printf "[VERBOSE]" && sgr_reset &&

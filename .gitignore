@@ -27,3 +27,6 @@ tags
 # Environment #
 ## General ##
 .env*
+
+# Artifacts #
+dist/
