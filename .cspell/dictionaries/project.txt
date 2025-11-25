@@ -1,6 +1,7 @@
 asexplicit
 behaviour
 blackhole
+bsdtar
 cooldown
 ensurepath
 ghpr
