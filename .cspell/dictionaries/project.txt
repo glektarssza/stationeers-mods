@@ -10,6 +10,7 @@ haumea
 himalia
 jetpack
 lethos
+literallayout
 loulan
 magnitudedius
 magnitudeize
@@ -23,6 +24,7 @@ noconfirm
 oxite
 pacman
 pipx
+programlisting
 remotehub
 respawn
 respawning
