@@ -28,7 +28,8 @@ function get_script_dir() {
 # Our cleanup function
 # shellcheck disable=SC2329
 function cleanup() {
-    unset SCRIPT_DIR PROJECT_ROOT DISTRO PRE_COMMIT_PATHS PRE_COMMIT_INDEX
+    unset _LIB_PATH SCRIPT_DIR PROJECT_ROOT DISTRO PRE_COMMIT_PATHS
+    unset PRE_COMMIT_INDEX
 }
 
 # Run our cleanup routine on exit
