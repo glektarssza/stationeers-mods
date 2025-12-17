@@ -73,7 +73,7 @@ jobs:
           token: ${{env.GH_TOKEN}}
       - id: download-artifacts
         name: Download artifacts
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v7
         with:
           artifact-ids: ${{needs.build.outputs.artifact-id}}
           path: artifacts
