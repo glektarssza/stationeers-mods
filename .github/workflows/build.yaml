@@ -90,7 +90,7 @@ jobs:
         if: inputs.upload-artifacts
         env:
           GHPR_USERNAME: ${{github.actor}}
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           path: ./dist/
           name: dist
