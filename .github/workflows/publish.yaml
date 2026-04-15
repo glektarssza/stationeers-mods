@@ -87,7 +87,7 @@ jobs:
       - id: attach-to-release
         name: Attach artifacts to release
         if: inputs.attach-to-github-release
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const script = require('./.github/scripts/upload-release-assets.js');
