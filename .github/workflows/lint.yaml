@@ -57,7 +57,7 @@ jobs:
           pipx install pre-commit;
       - id: prepare-nodejs
         name: Prepare NodeJS
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: '24'
           token: ${{env.GH_TOKEN}}
